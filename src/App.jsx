@@ -1,10 +1,10 @@
+import DiscountTab from "./components/DiscountTab"
 
-function App() {
-  
+const App = () => {
   return (
-    <>
-      
-    </>
+    <main>
+      <DiscountTab  />
+    </main>
   )
 }
 
