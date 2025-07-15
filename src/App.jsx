@@ -1,9 +1,11 @@
 import DiscountTab from "./components/DiscountTab"
+import Navbar from './components/Navbar'
 
 const App = () => {
   return (
     <main>
-      <DiscountTab  />
+      <DiscountTab />
+      <Navbar  />
     </main>
   )
 }
