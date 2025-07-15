@@ -8,7 +8,7 @@ const DiscountTab = () => {
           Sign Up Now
         </a>
       </p>
-      <BiX size={20} className="absolute right-0"/>
+      <BiX size={20} className="absolute right-10"/>
     </div>
   );
 };
