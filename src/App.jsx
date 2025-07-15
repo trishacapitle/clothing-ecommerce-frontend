@@ -1,13 +1,15 @@
-import DiscountTab from "./components/DiscountTab"
-import Navbar from './components/Navbar'
+import DiscountTab from "./components/DiscountTab";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
 
 const App = () => {
   return (
     <main>
       <DiscountTab />
-      <Navbar  />
+      <Navbar />
+      <Hero />
     </main>
-  )
-}
+  );
+};
 
-export default App
+export default App;
