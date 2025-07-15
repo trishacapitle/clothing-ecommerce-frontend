@@ -1,11 +1,11 @@
-const Button = (title, color, bg, height, width) => {
+const Button = ({ title, color, bg, width }) => {
   return (
-    <div
-      className={`p-auto rounded-full text-${color} bg-${bg} h-[${height}] w-[${width}]`}
+    <button
+      className={`font-primary p-auto rounded-full h-14 text-${color} bg-${bg} w-${width}`}
     >
       {title}
-    </div>
+    </button>
   );
-}
+};
 
-export default Button
+export default Button;
