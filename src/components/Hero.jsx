@@ -4,7 +4,7 @@ import Button from "./ui/Button";
 
 const Hero = () => {
   return (
-    <div className="flex-center relative h-[100dvh] w-full">
+    <section className="flex-center relative h-[100dvh] w-full">
       <img src={bg} alt="hero image" className="absolute top-0 -z-99" />
       <div className="content flex-center h-full w-[80dvw] gap-24">
         <div className="flex flex-1/2 flex-col gap-8">
@@ -47,7 +47,7 @@ const Hero = () => {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
