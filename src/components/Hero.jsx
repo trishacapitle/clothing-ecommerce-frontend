@@ -16,10 +16,7 @@ const Hero = () => {
             designed to bring out your individuality and cater to your sense of
             style.
           </p>
-          <Button
-            title="Shop Now"
-            className="bg-black px-20 text-white"
-          />
+          <Button title="Shop Now" className="h-14 bg-black px-20 text-white" />
           <div className="shop-performance font-primary flex-center justify-between">
             <div>
               <h1 className="text-4xl font-bold">200+</h1>
