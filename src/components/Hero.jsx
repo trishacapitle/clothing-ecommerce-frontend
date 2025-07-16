@@ -1,5 +1,5 @@
-import bg from "../assets/landing_page.png";
-import vector from "../assets/vector.png";
+import bg from "/landing_page.png";
+import vector from "/vector.png";
 import Button from "./ui/Button";
 
 const Hero = () => {

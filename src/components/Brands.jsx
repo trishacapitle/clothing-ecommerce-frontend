@@ -1,9 +1,9 @@
 import Marquee from "react-fast-marquee";
-import versace from "../assets/versace.png";
-import zara from "../assets/zara.png";
-import gucci from "../assets/gucci.png";
-import prada from "../assets/prada.png";
-import calvinKlein from "../assets/calvinklein.png";
+import versace from "/versace.png";
+import zara from "/zara.png";
+import gucci from "/gucci.png";
+import prada from "/prada.png";
+import calvinKlein from "/calvinklein.png";
 
 const Brands = () => {
   const brands = [versace, zara, gucci, prada, calvinKlein];
