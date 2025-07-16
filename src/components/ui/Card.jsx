@@ -1,9 +1,6 @@
 const Card = ({ product }) => {
-  const { id, image, name, price, rating } = product;
+  const { image, name, price, rating, discount, originalPrice } = product;
 
-  const numericId = Number(id);
-  const isEven = numericId % 2 === 0;
-  const originalPrice = price * 1.2;
   const discountPercentage = ((originalPrice - price) / originalPrice) * 100;
 
   const filledStars = Math.floor(rating);
@@ -26,7 +23,7 @@ const Card = ({ product }) => {
 
         <div className="flex gap-2.5">
           <h1 className="text-2xl font-bold">${price}</h1>
-          {isEven && (
+          {discount && (
             <div className="flex-center gap-2.5">
               <div className="text-2xl text-black/40 line-through font-bold">
                 ${originalPrice}

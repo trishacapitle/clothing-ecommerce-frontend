@@ -13,7 +13,9 @@ export const data = {
         "name": "Skinny Fit Jeans",
         "rating": 3.5,
         "price": 240,
-        "image": "skinny_fit_jeans.png"
+        "image": "skinny_fit_jeans.png",
+        "discount": true,
+        "originalPrice": 260,
       },
       {
         "id": "product3",
@@ -27,7 +29,9 @@ export const data = {
         "name": "Sleeve Striped T‑shirt",
         "rating": 4.5,
         "price": 130,
-        "image": "sleeve_striped_tshirt.png"
+        "image": "sleeve_striped_tshirt.png",
+        "discount": true,
+        "originalPrice": 160,
       }
     ],
     "topSelling": [
@@ -36,7 +40,9 @@ export const data = {
         "name": "Vertical Striped Shirt",
         "rating": 5.0,
         "price": 212,
-        "image": "vertical_striped_shirt.png"
+        "image": "vertical_striped_shirt.png",
+        "discount": true,
+        "originalPrice": 232,
       },
       {
         "id": "product2",
