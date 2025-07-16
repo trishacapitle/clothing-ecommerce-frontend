@@ -1,7 +1,8 @@
 import DiscountTab from "./components/DiscountTab";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-import Marquee from "./components/Marquee";
+import Brands from "./components/Brands";
+import Products from "./components/Products";
 
 const App = () => {
   return (
@@ -9,7 +10,8 @@ const App = () => {
       <DiscountTab />
       <Navbar />
       <Hero />
-      <Marquee  />
+      <Brands />
+      <Products />
     </main>
   );
 };
