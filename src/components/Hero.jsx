@@ -4,8 +4,8 @@ import Button from "./ui/Button";
 
 const Hero = () => {
   return (
-    <section className="flex-center relative h-[100dvh] w-full">
-      <img src={bg} alt="hero image" className="absolute top-0 -z-99" />
+    <section className="flex-center relative h-[660px] w-full bg-[#F2F0F1] -z-20">
+      <img src={bg} alt="hero image" className="absolute top-0 -z-10" />
       <div className="content flex-center h-full w-[80dvw] gap-24">
         <div className="flex flex-1/2 flex-col gap-8">
           <h1 className="font-secondary text-6xl uppercase">
