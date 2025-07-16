@@ -1,4 +1,4 @@
-export const products = {
+export const data = {
   "products": {
     "newArrivals": [
       {
