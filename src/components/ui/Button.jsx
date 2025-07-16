@@ -1,7 +1,7 @@
-const Button = ({ title, color, bg, width }) => {
+const Button = ({ title, className = ""}) => {
   return (
     <button
-      className={`font-primary p-auto rounded-full h-14 text-${color} bg-${bg} w-${width}`}
+      className={`font-primary h-14 rounded-full w-fit ${className} transition-all duration-300 ease-in-out hover:scale-105`}
     >
       {title}
     </button>
