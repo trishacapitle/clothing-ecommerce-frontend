@@ -5,6 +5,7 @@ import Brands from "./components/Brands";
 import Products from "./components/Products";
 import Categories from "./components/Categories";
 import Reviews from "./components/Reviews";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <Products />
       <Categories />
       <Reviews />
+      <Footer />
     </main>
   );
 };
