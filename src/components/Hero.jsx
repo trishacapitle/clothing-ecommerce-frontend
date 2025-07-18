@@ -38,12 +38,12 @@ const Hero = () => {
           <img
             src={vector}
             alt="vector image"
-            className="absolute top-50 w-14 translate-y-1/2"
+            className="absolute top-50 w-14 translate-y-1/2 animate-bounce"
           />
           <img
             src={vector}
             alt="vector image"
-            className="absolute top-10 right-10"
+            className="absolute top-10 right-10 animate-bounce"
           />
         </div>
       </div>
