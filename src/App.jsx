@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Brands from "./components/Brands";
 import Products from "./components/Products";
+import Categories from "./components/Categories";
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <Hero />
       <Brands />
       <Products />
+      <Categories />
     </main>
   );
 };
