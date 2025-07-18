@@ -8,7 +8,7 @@ const ReviewCard = ({ rating }) => {
   const star = "★".repeat(filledStars) + "☆".repeat(emptyStars);
 
   return (
-    <div className="font-primary m-2.5 h-60 w-100 items-center gap-4 rounded-3xl border border-black/10 p-7 hover:border-black/40 hover:shadow-xl hover:-translate-2 transition-all duration-300 ease-in-out">
+    <div className="font-primary m-2.5 h-60 w-100 items-center gap-4 rounded-3xl border border-black/10 p-7 hover:border-black/40 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 ease-in-out">
       <p className="text-xl text-[gold]">{star}</p>
       <p className="flex items-center gap-1 text-xl font-bold">
         {customer}{" "}
