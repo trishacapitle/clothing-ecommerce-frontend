@@ -17,7 +17,7 @@ const Card = ({ product }) => {
         <h2 className="text-xl font-bold">{name}</h2>
 
         <div className="flex items-center gap-3">
-          <span className="text-base text-[#FFC633]">{stars}</span>
+          <span className="text-base text-[gold]">{stars}</span>
           <span className="text-sm text-black/60">{rating}/5</span>
         </div>
 
