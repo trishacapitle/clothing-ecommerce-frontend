@@ -9,8 +9,8 @@ import { TfiEmail } from "react-icons/tfi";
 const Footer = () => {
   return (
     <div className="relative m-auto w-[100dvw] px-[10dvw]">
-      <div className="absolute bg-[#F0F0F0]"></div>
-      <div className="newsletter mb-12 flex items-center justify-between rounded-3xl bg-black p-9 text-white gap-48">
+      <div className="absolute bottom-0 left-0 -z-99 h-[500px] w-full bg-[#F0F0F0]"></div>
+      <div className="newsletter mb-12 flex items-center justify-between gap-48 rounded-3xl bg-black p-9 text-white">
         <h1 className="font-secondary text-4xl uppercase">
           stay upto date about our latest offers
         </h1>
@@ -20,10 +20,10 @@ const Footer = () => {
             <input
               type="text"
               placeholder="Enter your email address"
-              className="placeholder:text-black/40 border-none w-full bg-transparent text-black outline-none"
+              className="w-full border-none bg-transparent text-black outline-none placeholder:text-black/40"
             />
           </div>
-          <button className="w-sm rounded-full bg-white py-4 text-black font-medium transition-all duration-300 ease-in-out hover:-translate-1">
+          <button className="w-sm rounded-full bg-white py-4 font-medium text-black transition-all duration-300 ease-in-out hover:-translate-1">
             Subscribe to Newsletter
           </button>
         </div>
@@ -81,9 +81,27 @@ const Footer = () => {
         </div>
       </div>
       <hr className="border-black/10" />
-      <div className="mt-5 flex items-center justify-between mb-16">
+      <div className="font-primary mt-5 flex items-center justify-between pb-16">
         <p className="text-sm text-black">
-          © 2023 shop.co. All rights reserved.
+          Shop.co © 2025. Coded by{" "}
+          <a
+            href="https://trishacapitle.vercel.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:font-bold hover:text-blue-800"
+          >
+            AshDev
+          </a>{" "}
+          using React + Vite and Tailwind CSS. Credits to{" "}
+          <a
+            href="https://www.figma.com/@hamzauix"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:font-bold hover:text-blue-800"
+          >
+            HamzaUIX
+          </a>{" "}
+          for the design.
         </p>
         <div className="flex gap-4">
           <img src="/visa.png" alt="Visa" />
