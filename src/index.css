@@ -16,6 +16,10 @@ body {
   overflow-x: hidden;
 }
 
+::-webkit-scrollbar {
+  width: 0px; /* Remove scrollbar space */
+}
+
 @utility flex-center {
   @apply flex items-center justify-center;
 }
