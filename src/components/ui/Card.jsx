@@ -8,9 +8,9 @@ const Card = ({ product }) => {
   const stars = "★".repeat(filledStars) + "☆".repeat(emptyStars);
 
   return (
-    <div className="font-primary flex h-fit w-72 flex-col gap-4">
-      <div className="flex-center h-72 w-72">
-        <img src={`/${image}`} alt={name} className="rounded-3xl" />
+    <div className="font-primary flex h-fit w-72 cursor-pointer flex-col gap-4 rounded-3xl border border-black/0 p-5 transition-all duration-300 ease-in-out hover:border-black/40 hover:shadow-lg hover:-translate-y-2">
+      <div className="flex-center">
+        <img src={`/${image}`} alt={name} className="w-72 h-72 rounded-3xl" />
       </div>
 
       <div className="details flex flex-col gap-1">
@@ -25,10 +25,12 @@ const Card = ({ product }) => {
           <h1 className="text-2xl font-bold">${price}</h1>
           {discount && (
             <div className="flex-center gap-2.5">
-              <div className="text-2xl text-black/40 line-through font-bold">
+              <div className="text-2xl font-bold text-black/40 line-through">
                 ${originalPrice}
               </div>
-              <div className="text-base w-14 bg-[#FF3333]/10 rounded-full flex-center text-[#FF3333] px-3 h-8 font-medium">-{discountPercentage.toFixed(0)}% </div>
+              <div className="flex-center h-8 w-14 rounded-full bg-[#FF3333]/10 px-3 text-base font-medium text-[#FF3333]">
+                -{discountPercentage.toFixed(0)}%{" "}
+              </div>
             </div>
           )}
         </div>
