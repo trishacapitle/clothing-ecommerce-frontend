@@ -1,6 +1,6 @@
 const Categories = () => {
   return (
-    <div className="col-center rounded-4xl bg-[#F0F0F0] p-16 w-fit m-auto">
+    <section className="col-center rounded-4xl bg-[#F0F0F0] p-16 w-fit m-auto">
       <h1 className="font-secondary mb-16 text-5xl uppercase">
         browse by dress style
       </h1>
@@ -40,7 +40,7 @@ const Categories = () => {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

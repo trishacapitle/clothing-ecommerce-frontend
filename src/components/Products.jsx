@@ -6,7 +6,7 @@ const Products = () => {
   const { newArrivals, topSelling } = data.products;
 
   return (
-    <div className="col-center w-full gap-16">
+    <section className="col-center w-full gap-16">
       <div className="new-arrivals col-center mt-16 gap-12">
         <h1 className="font-secondary text-5xl uppercase">New Arrivals</h1>
         <div className="products flex-center gap-5">
@@ -34,7 +34,7 @@ const Products = () => {
           className="h-12 border border-black bg-white px-20"
         />
       </div>
-    </div>
+    </section>
   );
 };
 
