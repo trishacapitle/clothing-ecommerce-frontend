@@ -9,21 +9,21 @@ import { TfiEmail } from "react-icons/tfi";
 const Footer = () => {
   return (
     <div className="relative m-auto w-[100dvw] px-[10dvw]">
-      <div className="absolute bottom-0 left-0 -z-99 h-[500px] w-full bg-[#F0F0F0]"></div>
-      <div className="newsletter mb-12 flex items-center justify-between gap-48 rounded-3xl bg-black p-9 text-white">
-        <h1 className="font-secondary text-4xl uppercase">
+      <div className="absolute bottom-0 left-0 -z-99 h-[70dvh] w-full bg-[#F0F0F0] sm:h-[500px]"></div>
+      <div className="newsletter mb-12 flex flex-col items-center justify-between gap-8 rounded-3xl bg-black p-6 text-white sm:flex-row sm:gap-48 sm:p-9">
+        <h1 className="font-secondary text-3xl uppercase sm:text-4xl">
           stay upto date about our latest offers
         </h1>
-        <div className="font-primary flex flex-col gap-4">
+        <div className="font-primary flex w-full flex-col gap-4">
           <div className="flex items-center gap-4 rounded-full bg-white px-4 py-4 text-black/40">
             <TfiEmail strokeWidth={1.5} size={20} />
             <input
               type="text"
               placeholder="Enter your email address"
-              className="w-full border-none bg-transparent text-black outline-none placeholder:text-black/40"
+              className="w-full border-none bg-transparent text-sm text-black outline-none placeholder:text-black/40 sm:text-base"
             />
           </div>
-          <button className="w-sm rounded-full bg-white py-4 font-medium text-black transition-all duration-300 ease-in-out hover:-translate-1">
+          <button className="w-full rounded-full bg-white py-4 text-sm font-medium text-black transition-all duration-300 ease-in-out hover:-translate-1 sm:text-base">
             Subscribe to Newsletter
           </button>
         </div>
