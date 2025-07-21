@@ -9,7 +9,7 @@ const Brands = () => {
   const brands = [versace, zara, gucci, prada, calvinKlein];
 
   return (
-    <section className="flex h-32 bg-black">
+    <section className="flex sm:h-32 h-24 bg-black">
       <Marquee
         pauseOnHover
         speed={100}
