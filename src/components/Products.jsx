@@ -7,9 +7,11 @@ const Products = () => {
 
   return (
     <section className="col-center w-full gap-16">
-      <div className="new-arrivals col-center mt-16 gap-12">
-        <h1 className="font-secondary text-5xl uppercase">New Arrivals</h1>
-        <div className="products flex-center gap-5">
+      <div className="new-arrivals col-center mt-16 sm:gap-12 gap-8">
+        <h1 className="font-secondary text-4xl uppercase sm:text-5xl">
+          New Arrivals
+        </h1>
+        <div className="products flex-center sm:gap-5  overflow-x-auto">
           {newArrivals.map((naProduct) => (
             <Card key={naProduct.id} product={naProduct} />
           ))}
@@ -24,7 +26,7 @@ const Products = () => {
 
       <div className="top-selling col-center mb-16 gap-12">
         <h1 className="font-secondary text-5xl uppercase">Top Selling</h1>
-        <div className="products flex-center gap-5">
+        <div className="products flex-center sm:gap-5  overflow-x-auto">
           {topSelling.map((tsProduct) => (
             <Card key={tsProduct.id} product={tsProduct} />
           ))}
