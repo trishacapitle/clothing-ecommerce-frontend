@@ -8,15 +8,15 @@ const ReviewCard = ({ rating }) => {
   const star = "★".repeat(filledStars) + "☆".repeat(emptyStars);
 
   return (
-    <div className="font-primary m-2.5 h-60 w-100 items-center gap-4 rounded-3xl border border-black/10 p-7 hover:border-black/40 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 ease-in-out">
+    <div className="font-primary m-2.5 sm:h-60 h-fit sm:w-100 w-56 items-center gap-4 rounded-3xl border border-black/10 p-7 hover:border-black/40 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 ease-in-out">
       <p className="text-xl text-[gold]">{star}</p>
-      <p className="flex items-center gap-1 text-xl font-bold">
+      <p className="flex items-center gap-1 sm:text-xl font-bold">
         {customer}{" "}
         <span>
-          <FaCircleCheck size={20} fill="#01AB31" />
+          <FaCircleCheck size={16} fill="#01AB31" />
         </span>
       </p>
-      <p>{review}</p>
+      <p className="sm:text-base text-sm">{review}</p>
     </div>
   );
 };

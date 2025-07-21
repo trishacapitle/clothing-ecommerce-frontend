@@ -8,8 +8,8 @@ const Reviews = () => {
 
   return (
     <section className="m-auto mt-20">
-      <div className="header mx-[10dvw] flex justify-between">
-        <h1 className="font-secondary text-5xl uppercase">
+      <div className="header sm:mx-[10dvw] mx-4 flex justify-between">
+        <h1 className="font-secondary sm:text-5xl text-4xl uppercase">
           Our Happy Customers
         </h1>
       </div>
@@ -19,7 +19,7 @@ const Reviews = () => {
           pauseOnHover
           gradient={true}
           gradientColor={"white"}
-          gradientWidth={200}
+          gradientWidth={100}
         >
           {ratings.map((rating, index) => (
             <ReviewCard key={index} rating={rating} />
