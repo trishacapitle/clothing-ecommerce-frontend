@@ -1,7 +1,7 @@
 const Categories = () => {
   return (
     <section className="col-center m-auto w-fit rounded-4xl bg-[#F0F0F0] p-8 sm:p-16">
-      <h1 className="font-secondary mb-8 text-4xl uppercase sm:mb-16 sm:text-5xl">
+      <h1 className="font-secondary mb-8 text-4xl uppercase sm:mb-16 sm:text-5xl text-center">
         browse by dress style
       </h1>
       <div className="flex-center sm:flex-row flex-col font-primary gap-5">
