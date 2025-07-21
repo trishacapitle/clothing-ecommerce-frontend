@@ -11,7 +11,7 @@ const Hero = () => {
         alt="hero image"
         className="absolute bottom-0 hidden sm:flex"
       />
-      <div className="content flex-center z-99 h-full gap-24 px-4 sm:w-[80dvw] sm:px-0">
+      <div className="content flex-center z-50 h-full gap-24 px-4 sm:w-[80dvw] sm:px-0">
         <div className="mt-10 flex flex-1/2 flex-col gap-5 sm:mt-0 sm:gap-8">
           <h1 className="font-secondary text-4xl uppercase sm:text-6xl">
             find clothes that matches your style
