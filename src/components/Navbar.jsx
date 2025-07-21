@@ -1,11 +1,42 @@
+import Hamburger from "hamburger-react";
 import { BiChevronDown, BiSearch, BiCart, BiUserCircle } from "react-icons/bi";
+import { useState } from "react";
+
 const Navbar = () => {
+  const [isOpen, toggleOpen] = useState(false);
+
+  const handleMenuToggle = () => {
+    toggleOpen(!isOpen);
+  };
+
   return (
-    <nav className="flex items-center m-auto sm:h-24 sm:w-[80dvw] w-full justify-between gap-10 sm:p-6 p-5">
-      <h1 className="font-secondary items-center text-3xl tracking-wide uppercase ml-10 sm:ml-0">
-        Shop.co
-      </h1>
-      <ul className="menu sm:flex hidden gap-6 text-black font-primary">
+    <nav className="relative m-auto flex h-16 w-[100dvw] items-center justify-between gap-10 p-5 sm:h-24 sm:w-[80dvw] sm:p-6">
+      <div className="flex w-[100dvw] items-center gap-2">
+        <button onClick={handleMenuToggle} className="sm:hidden">
+          <Hamburger size={24} />
+        </button>
+        <ul
+          className={`font-primary absolute top-16 left-0 z-99 w-[100dvw] gap-4 bg-white p-8 font-bold shadow-lg col-center ${isOpen ? "opacity-100" : "opacity-0"}`}
+        >
+          <li className="flex items-center">
+            <a href="#">Shop </a>
+            <BiChevronDown />
+          </li>
+          <li>
+            <a href="#">On Sale</a>
+          </li>
+          <li>
+            <a href="#">New Arrivals</a>
+          </li>
+          <li>
+            <a href="#">Brands</a>
+          </li>
+        </ul>
+        <h1 className="font-secondary text-3xl tracking-wide uppercase">
+          Shop.co
+        </h1>
+      </div>
+      <ul className="menu font-primary hidden gap-6 text-black sm:flex">
         <li>
           <a
             href="#"
@@ -42,7 +73,7 @@ const Navbar = () => {
           </a>
         </li>
       </ul>
-      <div className="search-bar sm:flex hidden h-12 grow items-center gap-3 rounded-full bg-(--secondary-color) p-4">
+      <div className="search-bar hidden h-12 grow items-center gap-3 rounded-full bg-(--secondary-color) p-4 sm:flex">
         <BiSearch size={20} />
         <input
           type="text"
