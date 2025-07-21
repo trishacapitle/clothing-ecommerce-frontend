@@ -8,8 +8,8 @@ import { TfiEmail } from "react-icons/tfi";
 
 const Footer = () => {
   return (
-    <div className="relative m-auto w-[100dvw] px-[10dvw]">
-      <div className="absolute bottom-0 left-0 -z-99 h-[70dvh] w-full bg-[#F0F0F0] sm:h-[500px]"></div>
+    <div className="relative m-auto w-[100dvw] px-4 sm:px-[10dvw]">
+      <div className="absolute bottom-0 left-0 -z-99 h-[100dvh] w-full bg-[#F0F0F0] sm:h-[500px]"></div>
       <div className="newsletter mb-12 flex flex-col items-center justify-between gap-8 rounded-3xl bg-black p-6 text-white sm:flex-row sm:gap-48 sm:p-9">
         <h1 className="font-secondary text-3xl uppercase sm:text-4xl">
           stay upto date about our latest offers
@@ -28,8 +28,8 @@ const Footer = () => {
           </button>
         </div>
       </div>
-      <div className="footer mb-12 flex justify-between">
-        <div className="flex w-60 flex-col gap-6">
+      <div className="footer mb-12 flex flex-col gap-6 sm:flex-row sm:justify-between sm:gap-28">
+        <div className="flex w-60 flex-col gap-4 sm:gap-6">
           <h1 className="font-secondary text-3xl uppercase">shop.co</h1>
           <p className="font-primary text-sm text-black/60">
             We have the clothes that suits your style and which you're proud to
@@ -51,38 +51,42 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="font-primary flex flex-col gap-4">
-          <p className="font-bold tracking-[.2em] uppercase">Company</p>
-          <p className="text-black/60 hover:text-black">About</p>
-          <p className="text-black/60 hover:text-black">Features</p>
-          <p className="text-black/60 hover:text-black">Works</p>
-          <p className="text-black/60 hover:text-black">Careers</p>
-        </div>
-        <div className="font-primary flex flex-col gap-4">
-          <p className="font-bold tracking-[.2em] uppercase">Help</p>
-          <p className="text-black/60 hover:text-black">Customer Support</p>
-          <p className="text-black/60 hover:text-black">Delivery Details</p>
-          <p className="text-black/60 hover:text-black">Terms & Conditions</p>
-          <p className="text-black/60 hover:text-black">Privacy Policy</p>
-        </div>
-        <div className="font-primary flex flex-col gap-4">
-          <p className="font-bold tracking-[.2em] uppercase">FAQ</p>
-          <p className="text-black/60 hover:text-black">Account</p>
-          <p className="text-black/60 hover:text-black">Manage Deliveries</p>
-          <p className="text-black/60 hover:text-black">Orders</p>
-          <p className="text-black/60 hover:text-black">Payments</p>
-        </div>
-        <div className="font-primary flex flex-col gap-4">
-          <p className="font-bold tracking-[.2em] uppercase">Resources</p>
-          <p className="text-black/60 hover:text-black">Free eBooks</p>
-          <p className="text-black/60 hover:text-black">Development Tutorial</p>
-          <p className="text-black/60 hover:text-black">How to - Blog</p>
-          <p className="text-black/60 hover:text-black">Youtube Playlist</p>
+        <div className="flex w-full flex-wrap justify-around gap-9.5 sm:justify-between">
+          <div className="font-primary flex flex-col gap-4 text-sm sm:text-base">
+            <p className="font-bold tracking-[.2em] uppercase">Company</p>
+            <p className="text-black/60 hover:text-black">About</p>
+            <p className="text-black/60 hover:text-black">Features</p>
+            <p className="text-black/60 hover:text-black">Works</p>
+            <p className="text-black/60 hover:text-black">Careers</p>
+          </div>
+          <div className="font-primary flex flex-col gap-4 text-sm sm:text-base">
+            <p className="font-bold tracking-[.2em] uppercase">Help</p>
+            <p className="text-black/60 hover:text-black">Customer Support</p>
+            <p className="text-black/60 hover:text-black">Delivery Details</p>
+            <p className="text-black/60 hover:text-black">Terms & Conditions</p>
+            <p className="text-black/60 hover:text-black">Privacy Policy</p>
+          </div>
+          <div className="font-primary flex flex-col gap-4 text-sm sm:text-base">
+            <p className="font-bold tracking-[.2em] uppercase">FAQ</p>
+            <p className="text-black/60 hover:text-black">Account</p>
+            <p className="text-black/60 hover:text-black">Manage Deliveries</p>
+            <p className="text-black/60 hover:text-black">Orders</p>
+            <p className="text-black/60 hover:text-black">Payments</p>
+          </div>
+          <div className="font-primary flex flex-col gap-4 text-sm sm:text-base">
+            <p className="font-bold tracking-[.2em] uppercase">Resources</p>
+            <p className="text-black/60 hover:text-black">Free eBooks</p>
+            <p className="text-black/60 hover:text-black">
+              Development Tutorial
+            </p>
+            <p className="text-black/60 hover:text-black">How to - Blog</p>
+            <p className="text-black/60 hover:text-black">Youtube Playlist</p>
+          </div>
         </div>
       </div>
       <hr className="border-black/10" />
       <div className="font-primary mt-5 flex items-center justify-between pb-16">
-        <p className="text-sm text-black">
+        <p className="text-xs text-black sm:text-sm w-[50%] ">
           Shop.co © 2025. Coded by{" "}
           <a
             href="https://trishacapitle.vercel.app"
@@ -103,7 +107,7 @@ const Footer = () => {
           </a>{" "}
           for the design.
         </p>
-        <div className="flex gap-4">
+        <div className="flex-center flex-wrap sm:gap-4">
           <img src="/visa.png" alt="Visa" />
           <img src="/mastercard.png" alt="Mastercard" />
           <img src="/paypal.png" alt="Paypal" />
