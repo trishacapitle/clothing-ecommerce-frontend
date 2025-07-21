@@ -8,10 +8,10 @@ const Hero = () => {
       <img src={bg} alt="hero image" className="absolute" />
       <div className="content flex-center z-99 h-full w-[80dvw] gap-24">
         <div className="flex flex-1/2 flex-col gap-8">
-          <h1 className="font-secondary text-6xl uppercase">
+          <h1 className="font-secondary sm:text-6xl text-4xl uppercase">
             find clothes that matches your style
           </h1>
-          <p className="font-primary text-black/60">
+          <p className="font-primary text-black/60 text-sm sm:text-base">
             Browse through our diverse range of meticulously crafted garments,
             designed to bring out your individuality and cater to your sense of
             style.
@@ -19,18 +19,18 @@ const Hero = () => {
           <Button title="Shop Now" className="h-14 bg-black px-20 text-white" />
           <div className="shop-performance font-primary flex-center justify-between">
             <div>
-              <h1 className="text-4xl font-bold">200+</h1>
-              <p className="">International Brands</p>
+              <h1 className="sm:text-4xl text-2xl font-bold">200+</h1>
+              <p className="text-xs sm:text-base text-black/60">International Brands</p>
             </div>
-            <hr className="h-20 w-[1px] border-0 bg-black/60" />
+            <hr className="h-20 w-[1px] border-0 bg-black/10" />
             <div>
-              <h1 className="text-4xl font-bold">2000+</h1>
-              <p className="">High-Quality Products</p>
+              <h1 className="sm:text-4xl text-2xl font-bold">2000+</h1>
+              <p className="text-xs sm:text-base text-black/60">High-Quality Products</p>
             </div>
-            <hr className="h-20 w-[1px] border-0 bg-black/60" />
+            <hr className="h-20 w-[1px] border-0 bg-black/10" />
             <div>
-              <h1 className="text-4xl font-bold">30,000+</h1>
-              <p className="">Happy Customers</p>
+              <h1 className="sm:text-4xl text-2xl font-bold">30,000+</h1>
+              <p className="text-xs sm:text-base text-black/60">Happy Customers</p>
             </div>
           </div>
         </div>
