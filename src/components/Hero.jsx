@@ -6,7 +6,7 @@ import Button from "./ui/Button";
 const Hero = () => {
   return (
     <section className="sm:flex-center col-center relative w-full bg-[#F2F0F1] sm:h-[660px]">
-      <img src={bg} alt="hero image" className="absolute hidden sm:flex" />
+      <img src={bg} alt="hero image" className="absolute hidden sm:flex bottom-0" />
       <div className="content flex-center z-99 h-full gap-24 px-4 sm:w-[80dvw] sm:px-0">
         <div className="mt-10 flex flex-1/2 flex-col gap-5 sm:mt-0 sm:gap-8">
           <h1 className="font-secondary text-4xl uppercase sm:text-6xl">
