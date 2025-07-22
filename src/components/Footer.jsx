@@ -85,7 +85,7 @@ const Footer = () => {
         </div>
       </div>
       <hr className="border-black/10" />
-      <div className="font-primary mt-5 flex items-center justify-between pb-16">
+      <div className="font-primary flex items-center justify-between py-5">
         <p className="text-xs text-black sm:text-sm w-[50%] ">
           Shop.co © 2025. Coded by{" "}
           <a
