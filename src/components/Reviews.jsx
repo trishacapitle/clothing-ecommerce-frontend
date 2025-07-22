@@ -16,7 +16,7 @@ const Reviews = () => {
       <div className="customer-reviews flex-center my-10">
         <Marquee
           speed={50}
-          pauseOnHover
+          pauseOnClick
           gradient={true}
           gradientColor={"white"}
           gradientWidth={100}
