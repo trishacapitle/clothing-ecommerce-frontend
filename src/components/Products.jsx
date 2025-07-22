@@ -25,7 +25,7 @@ const Products = () => {
       <hr className="w-[80dvw] border-black/10" />
 
       <div className="top-selling col-center mb-16 gap-12">
-        <h1 className="font-secondary text-5xl uppercase">Top Selling</h1>
+        <h1 className="font-secondary sm:text-5xl text-4xl uppercase">Top Selling</h1>
         <div className="products flex-center sm:gap-5  overflow-x-auto">
           {topSelling.map((tsProduct) => (
             <Card key={tsProduct.id} product={tsProduct} />
