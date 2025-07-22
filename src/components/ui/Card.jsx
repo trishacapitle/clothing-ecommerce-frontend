@@ -8,7 +8,7 @@ const Card = ({ product }) => {
   const stars = "★".repeat(filledStars) + "☆".repeat(emptyStars);
 
   return (
-    <div className="font-primary flex h-fit w-72 cursor-pointer flex-col gap-4 rounded-3xl border border-black/0 p-5 transition-all duration-300 ease-in-out hover:border-black/40 hover:shadow-lg hover:-translate-y-2">
+    <div className="font-primary flex h-fit w-72 cursor-pointer flex-col gap-4 rounded-3xl border border-black/0 p-5 transition-all duration-300 ease-in-out hover:border-black/40 hover:shadow-lg hover:-translate-y-2 my-5">
       <div className="flex-center">
         <img src={`/${image}`} alt={name} className="w-72 h-72 rounded-3xl" />
       </div>
