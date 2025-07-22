@@ -11,7 +11,7 @@ const [isOpen, setIsOpen] = useState(true);
   return (
     <div>
       {isOpen && (
-        <div className="discount-tab flex-center font-primary h-9 bg-black text-sm text-white">
+        <div className="discount-tab flex-center font-primary h-9 bg-black sm:text-sm text-xs text-white">
           <p>
             Sign up and get 20% off to your first order.{" "}
             <a href="#" className="underline">Sign Up Now</a>
