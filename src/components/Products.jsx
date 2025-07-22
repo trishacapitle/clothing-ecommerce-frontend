@@ -5,32 +5,38 @@ import { data } from "../assets/products";
 const Products = () => {
   const { newArrivals, topSelling } = data.products;
 
+  const ScrollList = ({ items }) => (
+    <div className="no-scrollbar w-full overflow-x-auto">
+      <div className="inline-flex sm:flex-center">
+        {items.map((product) => (
+          <div key={product.id} className="min-w-[200px] shrink-0">
+            <Card product={product} />
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+
   return (
-    <section className="col-center w-full gap-16">
-      <div className="new-arrivals col-center mt-16 sm:gap-12 gap-8">
+    <section className="flex w-full flex-col gap-16">
+      <div className="mt-16 flex w-full flex-col items-center gap-8 sm:gap-12">
         <h1 className="font-secondary text-4xl uppercase sm:text-5xl">
           New Arrivals
         </h1>
-        <div className="products flex-center sm:gap-5  overflow-x-auto">
-          {newArrivals.map((naProduct) => (
-            <Card key={naProduct.id} product={naProduct} />
-          ))}
-        </div>
+        <ScrollList items={newArrivals} />
         <Button
           title="View All"
           className="h-12 border border-black bg-white px-20"
         />
       </div>
 
-      <hr className="w-[80dvw] border-black/10" />
+      <hr className="w-full border-black/10" />
 
-      <div className="top-selling col-center mb-16 gap-12">
-        <h1 className="font-secondary sm:text-5xl text-4xl uppercase">Top Selling</h1>
-        <div className="products flex-center sm:gap-5  overflow-x-auto">
-          {topSelling.map((tsProduct) => (
-            <Card key={tsProduct.id} product={tsProduct} />
-          ))}
-        </div>
+      <div className="mb-16 flex w-full flex-col items-center gap-12">
+        <h1 className="font-secondary text-4xl uppercase sm:text-5xl">
+          Top Selling
+        </h1>
+        <ScrollList items={topSelling} />
         <Button
           title="View All"
           className="h-12 border border-black bg-white px-20"
