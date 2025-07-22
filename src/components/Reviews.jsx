@@ -1,4 +1,3 @@
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { data } from "../assets/products.js";
 import ReviewCard from "./ui/ReviewCard";
 import Marquee from "react-fast-marquee";
