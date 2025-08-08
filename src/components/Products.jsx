@@ -1,6 +1,6 @@
 import Card from "./ui/Card";
 import Button from "./ui/Button";
-import { data } from "../assets/products";
+import { data } from "../assets/data";
 
 const Products = () => {
   const { newArrivals, topSelling } = data.products;

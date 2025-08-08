@@ -1,4 +1,4 @@
-import { data } from "../assets/products.js";
+import { data } from "../assets/data";
 import ReviewCard from "./ui/ReviewCard";
 import Marquee from "react-fast-marquee";
 
