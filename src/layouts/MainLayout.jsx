@@ -1,9 +1,17 @@
-import React from 'react'
+import { Outlet } from "react-router-dom";
+import DiscountTab from "../components/DiscountTab";
+import Navbar from "../components/Navbar";
 
 const MainLayout = () => {
   return (
-    <div>MainLayout</div>
-  )
-}
+    <>
+      <div>
+        <DiscountTab />
+        <Navbar />
+      </div>
+      <Outlet />
+    </>
+  );
+};
 
-export default MainLayout
+export default MainLayout;
