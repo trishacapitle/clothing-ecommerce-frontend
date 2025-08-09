@@ -1,13 +1,13 @@
-import Card from "./ui/Card";
-import Button from "./ui/Button";
-import { data } from "../assets/data";
+import Card from "../../../components/ui/Card";
+import Button from "../../../components/ui/Button";
+import { data } from "../../../assets/data";
 
 const Products = () => {
   const { newArrivals, topSelling } = data.products;
 
   const ScrollList = ({ items }) => (
     <div className="no-scrollbar w-full overflow-x-auto">
-      <div className="inline-flex sm:flex-center">
+      <div className="sm:flex-center inline-flex">
         {items.map((product) => (
           <div key={product.id} className="min-w-[200px] shrink-0">
             <Card product={product} />

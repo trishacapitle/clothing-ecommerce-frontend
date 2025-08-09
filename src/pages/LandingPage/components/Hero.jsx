@@ -1,7 +1,7 @@
 import bg from "/landing_page.png";
 import bgMobile from "/landing_page_mobile.png";
 import vector from "/vector.png";
-import Button from "./ui/Button";
+import Button from "../../../components/ui/Button";
 
 const Hero = () => {
   return (
@@ -52,25 +52,25 @@ const Hero = () => {
           <img
             src={vector}
             alt="vector image"
-            className="absolute top-50 w-14 translate-y-1/2 "
+            className="absolute top-50 w-14 translate-y-1/2"
           />
           <img
             src={vector}
             alt="vector image"
-            className="absolute top-10 right-10 "
+            className="absolute top-10 right-10"
           />
         </div>
       </div>
-      <div className="w-full relative">
+      <div className="relative w-full">
         <img
           src={vector}
           alt="vector image"
-          className="absolute top-50 left-5 w-14 translate-y-1/2  sm:hidden"
+          className="absolute top-50 left-5 w-14 translate-y-1/2 sm:hidden"
         />
         <img
           src={vector}
           alt="vector image"
-          className="absolute top-10 right-5  sm:hidden"
+          className="absolute top-10 right-5 sm:hidden"
         />
         <img
           src={bgMobile}

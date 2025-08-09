@@ -1,5 +1,5 @@
-import { data } from "../assets/data";
-import ReviewCard from "./ui/ReviewCard";
+import { data } from "../../../assets/data";
+import ReviewCard from "../../../components/ui/ReviewCard";
 import Marquee from "react-fast-marquee";
 
 const Reviews = () => {
@@ -7,8 +7,8 @@ const Reviews = () => {
 
   return (
     <section className="m-auto mt-20">
-      <div className="header sm:mx-[10dvw] mx-4 flex justify-between">
-        <h1 className="font-secondary sm:text-5xl text-4xl uppercase">
+      <div className="header mx-4 flex justify-between sm:mx-[10dvw]">
+        <h1 className="font-secondary text-4xl uppercase sm:text-5xl">
           Our Happy Customers
         </h1>
       </div>
