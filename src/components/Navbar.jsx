@@ -10,13 +10,13 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="relative m-auto flex h-16 items-center justify-between gap-10 p-5 sm:h-24 sm:w-[80dvw] sm:p-6">
+    <nav className="relative m-auto flex h-16 items-center justify-between gap-10 p-5 sm:h-24 md:w-[90dvw] md:p-6 lg:w-[80dvw]">
       <div className="menu-mobile flex items-center gap-2">
-        <button onClick={handleMenuToggle} className="sm:hidden">
+        <button onClick={handleMenuToggle} className="md:hidden">
           <Hamburger size={24} />
         </button>
         <ul
-          className={`font-primary absolute top-16 left-0 z-99 w-[100dvw] gap-4 bg-white p-8 font-bold shadow-lg col-center ${isOpen ? "opacity-100" : "opacity-0"}`}
+          className={`font-primary col-center absolute top-16 left-0 z-99 w-[100dvw] gap-4 bg-white p-8 font-bold shadow-lg ${isOpen ? "opacity-100" : "opacity-0"}`}
         >
           <li className="flex items-center">
             <a href="#">Shop </a>
@@ -36,7 +36,7 @@ const Navbar = () => {
           Shop.co
         </h1>
       </div>
-      <ul className="menu font-primary hidden gap-6 text-black sm:flex">
+      <ul className="menu font-primary hidden gap-6 text-black md:flex">
         <li>
           <a
             href="#"
@@ -73,7 +73,7 @@ const Navbar = () => {
           </a>
         </li>
       </ul>
-      <div className="search-bar hidden h-12 grow items-center gap-3 rounded-full bg-(--secondary-color) p-4 sm:flex">
+      <div className="search-bar hidden h-12 grow items-center gap-3 rounded-full bg-(--secondary-color) p-4 lg:flex">
         <BiSearch size={20} />
         <input
           type="text"
@@ -82,7 +82,7 @@ const Navbar = () => {
         />
       </div>
       <div className="flex gap-3.5">
-        <BiSearch size={20} className="sm:hidden" />
+        <BiSearch size={20} className="lg:hidden" />
         <BiCart size={20} />
         <BiUserCircle size={20} />
       </div>
