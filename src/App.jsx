@@ -1,24 +1,22 @@
-import DiscountTab from "./components/DiscountTab";
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import Brands from "./components/Brands";
-import Products from "./components/Products";
-import Categories from "./components/Categories";
-import Reviews from "./components/Reviews";
-import Footer from "./components/Footer";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import MainLayout from "./layouts/MainLayout";
+import Landing from "./pages/LandingPage/Landing";
+import Category from "./pages/CategoryPage/Category"
+import Product from "./pages/ProductPage/Product"
+import Checkout from "./pages/CheckoutPage/Checkout"
 
 const App = () => {
   return (
-    <main>
-      <DiscountTab />
-      <Navbar />
-      <Hero />
-      <Brands />
-      <Products />
-      <Categories />
-      <Reviews />
-      <Footer />
-    </main>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<MainLayout />}>
+          <Route index element={<Landing />} />
+          <Route path="category" element={<Category />} />
+          <Route path="product" element={<Product />} />
+          <Route path="checkout" element={<Checkout />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 };
 
