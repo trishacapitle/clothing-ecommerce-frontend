@@ -7,7 +7,7 @@ const Products = () => {
 
   const ScrollList = ({ items }) => (
     <div className="no-scrollbar w-full overflow-x-auto">
-      <div className="sm:flex-center inline-flex">
+      <div className="lg:flex-center inline-flex">
         {items.map((product) => (
           <div key={product.id} className="min-w-[200px] shrink-0">
             <Card product={product} />
