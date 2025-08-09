@@ -10,11 +10,11 @@ const Footer = () => {
   return (
     <div className="relative m-auto w-[100dvw] px-4 sm:px-[10dvw]">
       <div className="absolute bottom-0 left-0 -z-99 h-[100dvh] w-full bg-[#F0F0F0] sm:h-[500px]"></div>
-      <div className="newsletter mb-12 flex flex-col items-center justify-between gap-8 rounded-3xl bg-black p-6 text-white sm:flex-row sm:gap-48 sm:p-9">
+      <div className="newsletter mb-12 flex flex-col items-center justify-between gap-8 rounded-3xl bg-black p-6 text-white sm:flex-row sm:p-9 md:gap-20">
         <h1 className="font-secondary text-3xl uppercase sm:text-4xl">
           stay upto date about our latest offers
         </h1>
-        <div className="font-primary flex w-full flex-col gap-4">
+        <div className="font-primary flex w-full flex-col gap-4 sm:w-[80%]">
           <div className="flex items-center gap-4 rounded-full bg-white px-4 py-4 text-black/40">
             <TfiEmail strokeWidth={1.5} size={20} />
             <input
@@ -86,7 +86,7 @@ const Footer = () => {
       </div>
       <hr className="border-black/10" />
       <div className="font-primary flex items-center justify-between py-5">
-        <p className="text-xs text-black sm:text-sm w-[50%] ">
+        <p className="w-[50%] text-xs text-black sm:text-sm">
           Shop.co © 2025. Coded by{" "}
           <a
             href="https://trishacapitle.vercel.app"
