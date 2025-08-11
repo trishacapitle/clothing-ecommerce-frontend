@@ -1,9 +1,13 @@
-import React from 'react'
+import { useParams } from "react-router-dom";
 
 const Category = () => {
-  return (
-    <div>Category</div>
-  )
-}
+  const { type } = useParams();
 
-export default Category
+  return (
+    <div>
+      <h1>Category {type}</h1>
+    </div>
+  );
+};
+
+export default Category;
