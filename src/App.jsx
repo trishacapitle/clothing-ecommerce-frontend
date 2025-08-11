@@ -11,9 +11,9 @@ const App = () => {
       <Routes>
         <Route path="/" element={<MainLayout />}>
           <Route index element={<Landing />} />
-          <Route path="category" element={<Category />} />
-          <Route path="product" element={<Product />} />
-          <Route path="checkout" element={<Checkout />} />
+          <Route path="/category/:type" element={<Category />} />
+          <Route path="/product" element={<Product />} />
+          <Route path="/checkout" element={<Checkout />} />
         </Route>
       </Routes>
     </BrowserRouter>
