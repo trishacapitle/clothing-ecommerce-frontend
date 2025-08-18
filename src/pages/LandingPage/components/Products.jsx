@@ -1,4 +1,5 @@
 import { data } from "../../../assets/data";
+import { Link } from "react-router-dom";
 import Button from "../../../components/ui/Button";
 import Card from "../../../components/ui/Card";
 
@@ -26,10 +27,12 @@ const Products = () => {
           New Arrivals
         </h1>
         <ScrollList items={products} tag="new arrival" />
-        <Button
-          title="View All"
-          className="h-12 border border-black bg-white px-20"
-        />
+        <Link to="category/all">
+          <Button
+            title="View All"
+            className="h-12 border border-black bg-white px-20"
+          />
+        </Link>
       </div>
 
       <hr className="w-full border-black/10" />
@@ -39,10 +42,12 @@ const Products = () => {
           Top Selling
         </h1>
         <ScrollList items={products} tag="top selling" />
-        <Button
-          title="View All"
-          className="h-12 border border-black bg-white px-20"
-        />
+        <Link to="category/all">
+          <Button
+            title="View All"
+            className="h-12 border border-black bg-white px-20"
+          />
+        </Link>
       </div>
     </section>
   );
