@@ -1,18 +1,20 @@
-import Card from "../../../components/ui/Card";
-import Button from "../../../components/ui/Button";
 import { data } from "../../../assets/data";
+import Button from "../../../components/ui/Button";
+import Card from "../../../components/ui/Card";
 
 const Products = () => {
-  const { newArrivals, topSelling } = data.products;
+  const { products } = data;
 
-  const ScrollList = ({ items }) => (
+  const ScrollList = ({ items, tag }) => (
     <div className="no-scrollbar w-full overflow-x-auto">
       <div className="lg:flex-center inline-flex">
-        {items.map((product) => (
-          <div key={product.id} className="min-w-[200px] shrink-0">
-            <Card product={product} />
-          </div>
-        ))}
+        {items
+          .filter((product) => product.tag === tag)
+          .map((product) => (
+            <div key={product.id} className="min-w-[200px] shrink-0">
+              <Card product={product} />
+            </div>
+          ))}
       </div>
     </div>
   );
@@ -23,7 +25,7 @@ const Products = () => {
         <h1 className="font-secondary text-4xl uppercase sm:text-5xl">
           New Arrivals
         </h1>
-        <ScrollList items={newArrivals} />
+        <ScrollList items={products} tag="new arrival" />
         <Button
           title="View All"
           className="h-12 border border-black bg-white px-20"
@@ -36,7 +38,7 @@ const Products = () => {
         <h1 className="font-secondary text-4xl uppercase sm:text-5xl">
           Top Selling
         </h1>
-        <ScrollList items={topSelling} />
+        <ScrollList items={products} tag="top selling" />
         <Button
           title="View All"
           className="h-12 border border-black bg-white px-20"
