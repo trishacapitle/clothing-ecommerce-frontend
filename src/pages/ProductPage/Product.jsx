@@ -1,7 +1,17 @@
+import ProductShowcase from "./components/ProductShowcase";
+import ProductDetails from "./components/ProductDetails";
+import ProductReviews from "./components/ProductReviews";
+
 const Product = () => {
   return (
-    <div>Product</div>
-  )
-}
+    <div>
+      <ProductShowcase />
+      <div>
+        <ProductDetails />
+        <ProductReviews />
+      </div>
+    </div>
+  );
+};
 
-export default Product
+export default Product;
