@@ -205,6 +205,7 @@ export const data = {
     {
       id: "7",
       name: "Loose Fit Bermuda Shorts",
+      rating: 4,
       price: 80,
       image: "loose_fit_bermuda.png",
       category: "gym",
