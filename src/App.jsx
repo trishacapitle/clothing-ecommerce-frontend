@@ -1,9 +1,9 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MainLayout from "./layouts/MainLayout";
 import Landing from "./pages/LandingPage/Landing";
-import Category from "./pages/CategoryPage/Category"
-import Product from "./pages/ProductPage/Product"
-import Checkout from "./pages/CheckoutPage/Checkout"
+import Category from "./pages/CategoryPage/Category";
+import Product from "./pages/ProductPage/Product";
+import Checkout from "./pages/CheckoutPage/Checkout";
 
 const App = () => {
   return (
