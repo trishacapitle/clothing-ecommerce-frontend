@@ -312,6 +312,182 @@ export const data = {
         },
       ],
     },
+    {
+      id: "9",
+      name: "Gradient Graphic T-shirt",
+      rating: 3.5,
+      price: 145,
+      image: "gradient_graphic_tshirt.png",
+      category: "casual",
+      review: [
+        {
+          id: 1,
+          productRating: 4.5,
+          customerName: "Samantha D.",
+          productReview:
+            "I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt.",
+          reviewDate: "August 14, 2023",
+        },
+        {
+          id: 2,
+          productRating: 4,
+          customerName: "Alex M.",
+          productReview:
+            "The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me.",
+          reviewDate: "August 15, 2023",
+        },
+        {
+          id: 3,
+          productRating: 3.5,
+          customerName: "Ethan R.",
+          productReview:
+            "This t-shirt is a must-have for anyone who appreciates good design. The minimalistic yet stylish pattern caught my eye, and the fit is perfect. I can see the designer's touch in every aspect of this shirt.",
+          reviewDate: "August 16, 2023",
+        },
+        {
+          id: 4,
+          productRating: 4,
+          customerName: "Olivia P.",
+          productReview:
+            "As a UI/UX enthusiast, I value simplicity and functionality. This t-shirt not only represents those principles but also feels great to wear. It's evident that the designer poured their creativity into making this t-shirt stand out.",
+          reviewDate: "August 17, 2023",
+        },
+        {
+          id: 5,
+          productRating: 4.5,
+          customerName: "Liam K.",
+          productReview:
+            "This t-shirt is a fusion of comfort and creativity. The fabric is soft, and the design speaks volumes about the designer's skill. It's like wearing a piece of art that reflects my passion for both design and fashion.",
+          reviewDate: "August 18, 2023",
+        },
+        {
+          id: 6,
+          productRating: 4.5,
+          customerName: "Ava H.",
+          productReview:
+            "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          reviewDate: "August 19, 2023",
+        },
+      ],
+    },
+    {
+      id: "10",
+      name: "Polo with Tipping Details",
+      rating: 4.5,
+      price: 180,
+      image: "polo_tipping_details.png",
+      category: "formal",
+      review: [
+        {
+          id: 1,
+          productRating: 4.5,
+          customerName: "Samantha D.",
+          productReview:
+            "I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt.",
+          reviewDate: "August 14, 2023",
+        },
+        {
+          id: 2,
+          productRating: 4,
+          customerName: "Alex M.",
+          productReview:
+            "The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me.",
+          reviewDate: "August 15, 2023",
+        },
+        {
+          id: 3,
+          productRating: 3.5,
+          customerName: "Ethan R.",
+          productReview:
+            "This t-shirt is a must-have for anyone who appreciates good design. The minimalistic yet stylish pattern caught my eye, and the fit is perfect. I can see the designer's touch in every aspect of this shirt.",
+          reviewDate: "August 16, 2023",
+        },
+        {
+          id: 4,
+          productRating: 4,
+          customerName: "Olivia P.",
+          productReview:
+            "As a UI/UX enthusiast, I value simplicity and functionality. This t-shirt not only represents those principles but also feels great to wear. It's evident that the designer poured their creativity into making this t-shirt stand out.",
+          reviewDate: "August 17, 2023",
+        },
+        {
+          id: 5,
+          productRating: 4.5,
+          customerName: "Liam K.",
+          productReview:
+            "This t-shirt is a fusion of comfort and creativity. The fabric is soft, and the design speaks volumes about the designer's skill. It's like wearing a piece of art that reflects my passion for both design and fashion.",
+          reviewDate: "August 18, 2023",
+        },
+        {
+          id: 6,
+          productRating: 4.5,
+          customerName: "Ava H.",
+          productReview:
+            "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          reviewDate: "August 19, 2023",
+        },
+      ],
+    },
+    {
+      id: "11",
+      name: "Black Striped T-shirt",
+      rating: 5,
+      price: 120,
+      discount: true,
+      originalPrice: 150,
+      image: "gradient_graphic_tshirt.png",
+      category: "party",
+      review: [
+        {
+          id: 1,
+          productRating: 4.5,
+          customerName: "Samantha D.",
+          productReview:
+            "I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt.",
+          reviewDate: "August 14, 2023",
+        },
+        {
+          id: 2,
+          productRating: 4,
+          customerName: "Alex M.",
+          productReview:
+            "The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me.",
+          reviewDate: "August 15, 2023",
+        },
+        {
+          id: 3,
+          productRating: 3.5,
+          customerName: "Ethan R.",
+          productReview:
+            "This t-shirt is a must-have for anyone who appreciates good design. The minimalistic yet stylish pattern caught my eye, and the fit is perfect. I can see the designer's touch in every aspect of this shirt.",
+          reviewDate: "August 16, 2023",
+        },
+        {
+          id: 4,
+          productRating: 4,
+          customerName: "Olivia P.",
+          productReview:
+            "As a UI/UX enthusiast, I value simplicity and functionality. This t-shirt not only represents those principles but also feels great to wear. It's evident that the designer poured their creativity into making this t-shirt stand out.",
+          reviewDate: "August 17, 2023",
+        },
+        {
+          id: 5,
+          productRating: 4.5,
+          customerName: "Liam K.",
+          productReview:
+            "This t-shirt is a fusion of comfort and creativity. The fabric is soft, and the design speaks volumes about the designer's skill. It's like wearing a piece of art that reflects my passion for both design and fashion.",
+          reviewDate: "August 18, 2023",
+        },
+        {
+          id: 6,
+          productRating: 4.5,
+          customerName: "Ava H.",
+          productReview:
+            "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          reviewDate: "August 19, 2023",
+        },
+      ],
+    },
   ],
   ratings: [
     {
