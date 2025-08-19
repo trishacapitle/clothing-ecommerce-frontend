@@ -6,7 +6,7 @@ const Reviews = () => {
   const { ratings } = data;
 
   return (
-    <section className="m-auto mt-20">
+    <section className="m-auto my-20">
       <div className="header mx-4 flex justify-between sm:mx-[10dvw]">
         <h1 className="font-secondary text-4xl uppercase sm:text-5xl">
           Our Happy Customers
