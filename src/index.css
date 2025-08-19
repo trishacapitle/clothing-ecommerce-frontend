@@ -20,6 +20,10 @@ body {
   width: 0px; /* Remove scrollbar space */
 }
 
+h1, p {
+  pointer-events: none;
+}
+
 @utility flex-center {
   @apply flex items-center justify-center;
 }
