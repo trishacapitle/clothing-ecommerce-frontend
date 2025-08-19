@@ -5,16 +5,16 @@ import {
   BiLogoTwitter,
 } from "react-icons/bi";
 import { TfiEmail } from "react-icons/tfi";
+import Button from "../../../components/ui/Button";
 
 const Footer = () => {
   return (
-    <div className="relative m-auto w-[100dvw] px-4 sm:px-[10dvw]">
-      <div className="absolute bottom-0 left-0 -z-99 h-[100dvh] w-full bg-[#F0F0F0] sm:h-[500px]"></div>
-      <div className="newsletter mb-12 flex flex-col items-center justify-between gap-8 rounded-3xl bg-black p-6 text-white sm:flex-row sm:p-9 md:gap-20">
-        <h1 className="font-secondary text-3xl uppercase sm:text-4xl">
+    <div className="relative mt-60 w-[100dvw] bg-[#F0F0F0] px-4 sm:mt-40 sm:px-[10dvw]">
+      <div className="newsletter flex -translate-y-1/2 flex-col items-center justify-between gap-8 rounded-3xl bg-black p-6 text-white sm:flex-row sm:p-9">
+        <h1 className="font-secondary text-3xl uppercase md:text-4xl">
           stay upto date about our latest offers
         </h1>
-        <div className="font-primary flex w-full flex-col gap-4 sm:w-[80%]">
+        <div className="font-primary flex w-full max-w-md flex-col gap-4 md:w-[80%]">
           <div className="flex items-center gap-4 rounded-full bg-white px-4 py-4 text-black/40">
             <TfiEmail strokeWidth={1.5} size={20} />
             <input
@@ -23,19 +23,20 @@ const Footer = () => {
               className="w-full border-none bg-transparent text-sm text-black outline-none placeholder:text-black/40 sm:text-base"
             />
           </div>
-          <button className="w-full rounded-full bg-white py-4 text-sm font-medium text-black transition-all duration-300 ease-in-out hover:-translate-1 sm:text-base">
-            Subscribe to Newsletter
-          </button>
+          <Button
+            className="h-14 w-full bg-white py-4 text-sm font-medium text-black hover:shadow-[5px_8px_0px_0px_rgba(100,100,100)] sm:text-base"
+            title="Subscribe to Newsletter"
+          />
         </div>
       </div>
-      <div className="footer mb-12 flex flex-col gap-6 sm:flex-row sm:justify-between sm:gap-28">
-        <div className="flex w-60 flex-col gap-4 sm:gap-6">
+      <div className="footer flex -translate-y-1/10 flex-col gap-10 sm:flex-row sm:justify-between">
+        <div className="flex flex-col gap-4 text-center sm:w-60 sm:gap-6 sm:text-left">
           <h1 className="font-secondary text-3xl uppercase">shop.co</h1>
           <p className="font-primary text-sm text-black/60">
             We have the clothes that suits your style and which you're proud to
             wear. From women to men.
           </p>
-          <div className="flex gap-4">
+          <div className="flex justify-center gap-4 sm:justify-start">
             <div className="flex-center h-7 w-7 rounded-full border border-black/20 transition-all duration-300 ease-in-out hover:-translate-y-2 hover:border-black/40 hover:shadow-xl">
               <BiLogoTwitter />
             </div>
@@ -51,7 +52,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="flex w-full flex-wrap justify-around gap-9.5 sm:justify-between">
+        <div className="mx-4 grid grid-cols-2 gap-6 md:grid-cols-4 cursor-pointer">
           <div className="font-primary flex flex-col gap-4 text-sm sm:text-base">
             <p className="font-bold tracking-[.2em] uppercase">Company</p>
             <p className="text-black/60 hover:text-black">About</p>
@@ -60,27 +61,27 @@ const Footer = () => {
             <p className="text-black/60 hover:text-black">Careers</p>
           </div>
           <div className="font-primary flex flex-col gap-4 text-sm sm:text-base">
-            <p className="font-bold tracking-[.2em] uppercase">Help</p>
-            <p className="text-black/60 hover:text-black">Customer Support</p>
-            <p className="text-black/60 hover:text-black">Delivery Details</p>
-            <p className="text-black/60 hover:text-black">Terms & Conditions</p>
-            <p className="text-black/60 hover:text-black">Privacy Policy</p>
+            <a className="font-bold tracking-[.2em] uppercase">Help</a>
+            <a className="text-black/60 hover:text-black">Customer Support</a>
+            <a className="text-black/60 hover:text-black">Delivery Details</a>
+            <a className="text-black/60 hover:text-black">Terms & Conditions</a>
+            <a className="text-black/60 hover:text-black">Privacy Policy</a>
           </div>
           <div className="font-primary flex flex-col gap-4 text-sm sm:text-base">
-            <p className="font-bold tracking-[.2em] uppercase">FAQ</p>
-            <p className="text-black/60 hover:text-black">Account</p>
-            <p className="text-black/60 hover:text-black">Manage Deliveries</p>
-            <p className="text-black/60 hover:text-black">Orders</p>
-            <p className="text-black/60 hover:text-black">Payments</p>
+            <a className="font-bold tracking-[.2em] uppercase">FAQ</a>
+            <a className="text-black/60 hover:text-black">Account</a>
+            <a className="text-black/60 hover:text-black">Manage Deliveries</a>
+            <a className="text-black/60 hover:text-black">Orders</a>
+            <a className="text-black/60 hover:text-black">Payments</a>
           </div>
           <div className="font-primary flex flex-col gap-4 text-sm sm:text-base">
-            <p className="font-bold tracking-[.2em] uppercase">Resources</p>
-            <p className="text-black/60 hover:text-black">Free eBooks</p>
-            <p className="text-black/60 hover:text-black">
+            <a className="font-bold tracking-[.2em] uppercase">Resources</a>
+            <a className="text-black/60 hover:text-black">Free eBooks</a>
+            <a className="text-black/60 hover:text-black">
               Development Tutorial
-            </p>
-            <p className="text-black/60 hover:text-black">How to - Blog</p>
-            <p className="text-black/60 hover:text-black">Youtube Playlist</p>
+            </a>
+            <a className="text-black/60 hover:text-black">How to - Blog</a>
+            <a className="text-black/60 hover:text-black">Youtube Playlist</a>
           </div>
         </div>
       </div>
