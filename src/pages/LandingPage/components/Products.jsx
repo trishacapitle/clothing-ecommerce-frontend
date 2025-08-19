@@ -27,7 +27,7 @@ const Products = () => {
           New Arrivals
         </h1>
         <ScrollList items={products} tag="new arrival" />
-        <Link to="category/all">
+        <Link to="category/newarrival">
           <Button
             title="View All"
             className="h-12 border border-black bg-white px-20 hover:shadow-[5px_8px_0px_0px_rgba(100,100,100)]"
@@ -42,7 +42,7 @@ const Products = () => {
           Top Selling
         </h1>
         <ScrollList items={products} tag="top selling" />
-        <Link to="category/all">
+        <Link to="category/topselling">
           <Button
             title="View All"
             className="h-12 border border-black bg-white px-20 hover:shadow-[5px_8px_0px_0px_rgba(100,100,100)]"
