@@ -12,9 +12,11 @@ const Products = () => {
         {items
           .filter((product) => product.tag === tag)
           .map((product) => (
-            <div key={product.id} className="min-w-[200px] shrink-0">
-              <Card product={product} />
-            </div>
+            <Link key={product.id} to={`product/${product.id}`}>
+              <div className="min-w-[200px] shrink-0">
+                <Card product={product} />
+              </div>
+            </Link>
           ))}
       </div>
     </div>
@@ -27,7 +29,7 @@ const Products = () => {
           New Arrivals
         </h1>
         <ScrollList items={products} tag="new arrival" />
-        <Link to="category/newarrival">
+        <Link to="category/new-arrival">
           <Button
             title="View All"
             className="h-12 border border-black bg-white px-20 hover:shadow-[5px_8px_0px_0px_rgba(100,100,100)]"
@@ -42,7 +44,7 @@ const Products = () => {
           Top Selling
         </h1>
         <ScrollList items={products} tag="top selling" />
-        <Link to="category/topselling">
+        <Link to="category/top-selling">
           <Button
             title="View All"
             className="h-12 border border-black bg-white px-20 hover:shadow-[5px_8px_0px_0px_rgba(100,100,100)]"
