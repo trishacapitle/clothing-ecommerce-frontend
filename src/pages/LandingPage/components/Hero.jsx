@@ -23,7 +23,7 @@ const Hero = () => {
           </p>
           <Button
             title="Shop Now"
-            className="h-14 w-full grow bg-black px-20 text-white sm:w-fit"
+            className="h-14 w-full grow bg-black px-20 text-white hover:-translate-1 hover:shadow-[5px_8px_0px_0px_rgba(150,150,150)] sm:w-fit"
           />
           <div className="shop-performance font-primary flex-center justify-between">
             <div>
