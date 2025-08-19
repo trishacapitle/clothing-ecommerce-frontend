@@ -9,7 +9,7 @@ import Button from "../../../components/ui/Button";
 
 const Footer = () => {
   return (
-    <div className="relative mt-60 w-[100dvw] bg-[#F0F0F0] px-4 sm:mt-40 sm:px-[10dvw]">
+    <footer className="relative mt-60 w-[100dvw] bg-[#F0F0F0] px-4 sm:mt-40 sm:px-[10dvw]">
       <div className="newsletter flex -translate-y-1/2 flex-col items-center justify-between gap-8 rounded-3xl bg-black p-6 text-white sm:flex-row sm:p-9">
         <h1 className="font-secondary text-3xl uppercase md:text-4xl">
           stay upto date about our latest offers
@@ -116,7 +116,7 @@ const Footer = () => {
           <img src="/gPay.png" alt="Google Pay" />
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 
