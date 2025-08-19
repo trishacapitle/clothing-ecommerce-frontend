@@ -1,7 +1,7 @@
 export const data = {
   products: [
     {
-      id: "1",
+      id: 1,
       name: "T‑shirt with Tape Details",
       rating: 4.5,
       price: 120,
@@ -28,7 +28,7 @@ export const data = {
       ],
     },
     {
-      id: "2",
+      id: 2,
       name: "Skinny Fit Jeans",
       price: 240,
       image: "skinny_fit_jeans.png",
@@ -38,7 +38,7 @@ export const data = {
       tag: "new arrival",
     },
     {
-      id: "3",
+      id: 3,
       name: "Checkered Shirt",
       price: 180,
       image: "checkered_shirt.png",
@@ -46,7 +46,7 @@ export const data = {
       tag: "new arrival",
     },
     {
-      id: "4",
+      id: 4,
       name: "Sleeve Striped T‑shirt",
       rating: 4.5,
       price: 130,
@@ -83,7 +83,7 @@ export const data = {
       ],
     },
     {
-      id: "5",
+      id: 5,
       name: "Vertical Striped Shirt",
       rating: 5.0,
       price: 212,
@@ -144,7 +144,7 @@ export const data = {
       ],
     },
     {
-      id: "6",
+      id: 6,
       name: "Courage Graphic T‑shirt",
       rating: 4.0,
       price: 145,
@@ -203,7 +203,7 @@ export const data = {
       ],
     },
     {
-      id: "7",
+      id: 7,
       name: "Loose Fit Bermuda Shorts",
       rating: 4,
       price: 80,
@@ -254,7 +254,7 @@ export const data = {
       ],
     },
     {
-      id: "8",
+      id: 8,
       name: "Faded Skinny Jeans",
       rating: 4.5,
       price: 210,
@@ -313,7 +313,7 @@ export const data = {
       ],
     },
     {
-      id: "9",
+      id: 9,
       name: "Gradient Graphic T-shirt",
       rating: 3.5,
       price: 145,
@@ -371,7 +371,7 @@ export const data = {
       ],
     },
     {
-      id: "10",
+      id: 10,
       name: "Polo with Tipping Details",
       rating: 4.5,
       price: 180,
@@ -429,7 +429,7 @@ export const data = {
       ],
     },
     {
-      id: "11",
+      id: 11,
       name: "Black Striped T-shirt",
       rating: 5,
       price: 120,
@@ -491,35 +491,35 @@ export const data = {
   ],
   ratings: [
     {
-      id: "customer1",
+      id: 1,
       stars: 5,
       name: "Sarah M.",
       review:
         "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.",
     },
     {
-      id: "customer2",
+      id: 2,
       stars: 5,
       name: "Alex K.",
       review:
         "Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions.",
     },
     {
-      id: "customer3",
+      id: 3,
       stars: 5,
       name: "James L.",
       review:
         "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.",
     },
     {
-      id: "customer4",
+      id: 4,
       stars: 5,
       name: "Marie S.",
       review:
         "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.",
     },
     {
-      id: "customer5",
+      id: 5,
       stars: 5,
       name: "Alex C.",
       review:
