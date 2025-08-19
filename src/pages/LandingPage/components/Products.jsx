@@ -30,7 +30,7 @@ const Products = () => {
         <Link to="category/all">
           <Button
             title="View All"
-            className="h-12 border border-black bg-white px-20"
+            className="h-12 cursor-pointer border border-black bg-white px-20 hover:shadow-[5px_8px_0px_0px_rgba(100,100,100)]"
           />
         </Link>
       </div>
@@ -45,7 +45,7 @@ const Products = () => {
         <Link to="category/all">
           <Button
             title="View All"
-            className="h-12 border border-black bg-white px-20"
+            className="h-12 cursor-pointer border border-black bg-white px-20 hover:shadow-[5px_8px_0px_0px_rgba(100,100,100)]"
           />
         </Link>
       </div>
