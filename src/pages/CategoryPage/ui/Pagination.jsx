@@ -1,9 +1,6 @@
-import React from 'react'
 
 const Pagination = () => {
-  return (
-    <div>Pagination</div>
-  )
+  return <div>Home &gt; Shop &gt; Men &gt; T-shirts</div>;
 }
 
 export default Pagination
