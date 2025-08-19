@@ -1,7 +1,7 @@
 const Button = ({ title, className = ""}) => {
   return (
     <button
-      className={`font-primary rounded-full w-fit ${className} transition-all duration-300 ease-in-out hover:scale-105`}
+      className={`font-primary rounded-full ${className} hover:-translate-1 ease-in-out duration-300 transition-all`}
     >
       {title}
     </button>
