@@ -27,21 +27,21 @@ const Hero = () => {
           />
           <div className="shop-performance font-primary flex-center justify-between">
             <div>
-              <h1 className="text-2xl font-bold md:text-4xl">200+</h1>
+              <p className="text-2xl font-bold md:text-4xl">200+</p>
               <p className="text-xs text-black/60 md:text-base">
                 International Brands
               </p>
             </div>
             <hr className="h-20 w-[1px] border-0 bg-black/10" />
             <div>
-              <h1 className="text-2xl font-bold md:text-4xl">2000+</h1>
+              <p className="text-2xl font-bold md:text-4xl">2000+</p>
               <p className="text-xs text-black/60 md:text-base">
                 High-Quality Products
               </p>
             </div>
             <hr className="h-20 w-[1px] border-0 bg-black/10" />
             <div>
-              <h1 className="text-2xl font-bold md:text-4xl">30,000+</h1>
+              <p className="text-2xl font-bold md:text-4xl">30,000+</p>
               <p className="text-xs text-black/60 md:text-base">
                 Happy Customers
               </p>
