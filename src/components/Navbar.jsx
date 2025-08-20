@@ -10,7 +10,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="relative m-auto flex h-16 items-center justify-between gap-10 p-5 sm:h-24 md:w-[90dvw] md:p-6 lg:w-[80dvw]">
+    <nav className="relative m-auto flex h-16 items-center justify-between gap-10 border-b border-b-black/10 p-5 sm:h-24 md:w-[90dvw] md:p-6 lg:w-[80dvw]">
       <div className="menu-mobile flex items-center gap-2">
         <button onClick={handleMenuToggle} className="md:hidden">
           <Hamburger size={24} />
