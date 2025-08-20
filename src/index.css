@@ -24,6 +24,14 @@ h1, p {
   pointer-events: none;
 }
 
+h1 {
+  font-family: var(--font-secondary);
+}
+
+p {
+  font-family: var(--font-primary);
+}
+
 @utility flex-center {
   @apply flex items-center justify-center;
 }
