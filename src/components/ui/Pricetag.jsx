@@ -6,7 +6,7 @@ const Pricetag = ({ product }) => {
 
   return (
     <div className="flex gap-2.5">
-      <h1 className="text-2xl font-bold">${price}</h1>
+      <p className="text-2xl font-bold">${price}</p>
       {discount && (
         <div className="flex-center gap-2.5">
           <div className="text-2xl font-bold text-black/40 line-through">
