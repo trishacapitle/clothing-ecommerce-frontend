@@ -1,8 +1,7 @@
 import { useParams } from "react-router-dom";
 import { data } from "../../../assets/data";
-import Pagination from "../../CategoryPage/ui/Pagination";
-import StarRatings from "../../../components/ui/StarRatings";
 import Pricetag from "../../../components/ui/Pricetag";
+import StarRatings from "../../../components/ui/StarRatings";
 
 const ProductShowcase = () => {
   const { id } = useParams();
@@ -10,26 +9,33 @@ const ProductShowcase = () => {
   const { products } = data;
   const selectedProduct = products.find((product) => product.id === Number(id));
 
-  console.log(selectedProduct);
-
   const { name, rating, image } =
     selectedProduct;
 
   return (
-    <section>
-      <Pagination />
-      <div>
+    <section className="p-4">
+      <div className="flex flex-col gap-5 sm:flex-row">
         <div className="product-picture">
-          <img src={`/${image}`} alt="product picture" />
+          <img
+            src={`/${image}`}
+            alt={`${name} image`}
+            className="w-full rounded-3xl"
+          />
         </div>
-        <div className="product-details">
-          <h1>{name}</h1>
+        <div className="product-details flex flex-col gap-3">
+          <h1 className="font-secondary text-2xl tracking-wider uppercase">
+            {name}
+          </h1>
           {rating ? (
             <StarRatings rating={rating} />
           ) : (
-            <span>No ratings yet</span>
+            <span className="text-black/60 font-primary">No ratings yet</span>
           )}
           <Pricetag product={selectedProduct} />
+          <p className="text-black/60">
+            This graphic t-shirt which is perfect for any occasion. Crafted from
+            a soft and breathable fabric, it offers superior comfort and style.
+          </p>
         </div>
       </div>
     </section>
