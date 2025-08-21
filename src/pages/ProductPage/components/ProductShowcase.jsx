@@ -13,13 +13,13 @@ const ProductShowcase = () => {
     selectedProduct;
 
   return (
-    <section className="p-4">
+    <section className="mt-4 w-full flex-center">
       <div className="flex flex-col gap-5 sm:flex-row">
         <div className="product-picture">
           <img
             src={`/${image}`}
             alt={`${name} image`}
-            className="w-full rounded-3xl"
+            className="rounded-3xl w-2xl"
           />
         </div>
         <div className="product-details flex flex-col gap-3">
