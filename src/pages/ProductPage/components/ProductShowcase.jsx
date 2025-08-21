@@ -22,8 +22,8 @@ const ProductShowcase = () => {
             className="rounded-3xl w-2xl"
           />
         </div>
-        <div className="product-details flex flex-col gap-3">
-          <h1 className="font-secondary text-2xl tracking-wider uppercase">
+        <div className="product-details flex flex-col gap-2 leading-tight">
+          <h1 className="font-secondary text-2xl sm:text-3xl tracking-wider uppercase">
             {name}
           </h1>
           {rating ? (
