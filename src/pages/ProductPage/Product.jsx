@@ -5,7 +5,7 @@ import Breadcrumb from "../../components/ui/Breadcrumb";
 
 const Product = () => {
   return (
-    <div>
+    <div className="flex flex-col w-full md:w-[90dvw] lg:w-[80dvw] m-auto p-4">
       <Breadcrumb  />
       <ProductShowcase />
       <div>
