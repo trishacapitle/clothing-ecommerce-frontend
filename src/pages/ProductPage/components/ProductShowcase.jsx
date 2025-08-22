@@ -61,7 +61,7 @@ const ProductShowcase = () => {
           <div>
             <hr className="border-black/20" />
             <div className="my-6">
-              <p>Select Colors</p>
+              <p className="text-black/60">Select Colors</p>
               <div className="product-selector mt-4 flex gap-2">
                 <button
                   onClick={() => handleSelectColor("amber")}
@@ -91,23 +91,23 @@ const ProductShowcase = () => {
             </div>
             <hr className="border-black/20" />
             <div className="my-6">
-              <p>Choose Size</p>
+              <p className="text-black/60">Choose Size</p>
               <div className="product-selector mt-4 flex gap-2">
                 <button
                   onClick={() => handleSelectSize("Small")}
-                  className={`font-primary color-option rounded-full bg-[#F0F0F0] px-8 py-3 transition-all duration-300 ease-in-out ${selectedSize === "Small" ? "bg-black text-white" : "bg-[#F0F0F0]"}`}
+                  className={`font-primary color-option rounded-full bg-[#F0F0F0] px-8 py-3 transition-all duration-300 ease-in-out ${selectedSize === "Small" ? "bg-black text-white" : "bg-[#F0F0F0] text-black/60"}`}
                 >
                   Small
                 </button>
                 <button
                   onClick={() => handleSelectSize("Medium")}
-                  className={`font-primary color-option rounded-full bg-[#F0F0F0] px-8 py-3 transition-all duration-300 ease-in-out ${selectedSize === "Medium" ? "bg-black text-white" : "bg-[#F0F0F0]"}`}
+                  className={`font-primary color-option rounded-full bg-[#F0F0F0] px-8 py-3 transition-all duration-300 ease-in-out ${selectedSize === "Medium" ? "bg-black text-white" : "bg-[#F0F0F0] text-black/60"}`}
                 >
                   Medium
                 </button>
                 <button
                   onClick={() => handleSelectSize("Large")}
-                  className={`font-primary color-option rounded-full px-8 py-3 transition-all duration-300 ease-in-out ${selectedSize === "Large" ? "bg-black text-white" : "bg-[#F0F0F0]"}`}
+                  className={`font-primary color-option rounded-full px-8 py-3 transition-all duration-300 ease-in-out ${selectedSize === "Large" ? "bg-black text-white" : "bg-[#F0F0F0] text-black/60"}`}
                 >
                   Large
                 </button>
