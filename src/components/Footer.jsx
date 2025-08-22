@@ -5,7 +5,7 @@ import {
   BiLogoTwitter,
 } from "react-icons/bi";
 import { TfiEmail } from "react-icons/tfi";
-import Button from "../../../components/ui/Button";
+import Button from "./ui/Button";
 
 const Footer = () => {
   return (
