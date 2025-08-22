@@ -7,7 +7,7 @@ import StarRatings from "../../../components/ui/StarRatings";
 
 const ProductShowcase = () => {
   const [qty, setQty] = useState(0);
-  const [isSelected, setisSelected] = useState(false);
+  const [selectedSize, setSelectedSize] = useState("");
 
   const { id } = useParams();
   const { products } = data;
@@ -24,8 +24,12 @@ const ProductShowcase = () => {
     const res = qty - 1;
     setQty(res);
   };
-  
 
+  const handleSelectSize = (size) => {
+    setSelectedSize(size);
+  }
+
+  
   return (
     <section className="flex-center mt-4 w-full">
       <div className="flex flex-col gap-5 sm:flex-row">
@@ -63,20 +67,19 @@ const ProductShowcase = () => {
             <hr className="border-black/20" />
             <div className="my-6">
               <p>Choose Size</p>
-
               <div className="product-selector mt-4 flex gap-2">
-                <button
-                  className={`font-primary color-option rounded-full bg-[#F0F0F0] px-8 py-3 ${isSelected}`}
+                <button onClick={() => handleSelectSize("Small")}
+                  className={`transition-all ease-in-out duration-300 font-primary color-option rounded-full bg-[#F0F0F0] px-8 py-3 ${selectedSize === "Small" ? "bg-black text-white": "bg-[#F0F0F0]"}`}
                 >
                   Small
                 </button>
-                <button
-                  className={`font-primary color-option rounded-full bg-[#F0F0F0] px-8 py-3 ${isSelected}`}
+                <button onClick={() => handleSelectSize("Medium")}
+                  className={`transition-all ease-in-out duration-300 font-primary color-option rounded-full bg-[#F0F0F0] px-8 py-3 ${selectedSize === "Medium" ? "bg-black text-white": "bg-[#F0F0F0]"}`}
                 >
                   Medium
                 </button>
-                <button
-                  className={`font-primary color-option rounded-full ${isSelected} bg-[#F0F0F0] px-8 py-3 ${isSelected}`}
+                <button onClick={() => handleSelectSize("Large")}
+                  className={`transition-all ease-in-out duration-300 font-primary color-option rounded-full  px-8 py-3 ${selectedSize === "Large" ? "bg-black text-white": "bg-[#F0F0F0]"}`}
                 >
                   Large
                 </button>
