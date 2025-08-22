@@ -32,6 +32,10 @@ p {
   font-family: var(--font-primary);
 }
 
+button {
+  cursor: pointer;
+}
+
 @utility flex-center {
   @apply flex items-center justify-center;
 }
