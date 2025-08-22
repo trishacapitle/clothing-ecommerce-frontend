@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import { useState } from "react";
-import {BiPlus, BiMinus} from "react-icons/bi"
+import { BiPlus, BiMinus, BiCheck } from "react-icons/bi";
 import { data } from "../../../assets/data";
 import Pricetag from "../../../components/ui/Pricetag";
 import StarRatings from "../../../components/ui/StarRatings";
@@ -8,6 +8,7 @@ import StarRatings from "../../../components/ui/StarRatings";
 const ProductShowcase = () => {
   const [qty, setQty] = useState(0);
   const [selectedSize, setSelectedSize] = useState("");
+  const [selectedColor, setSelectedColor] = useState("");
 
   const { id } = useParams();
   const { products } = data;
@@ -27,9 +28,12 @@ const ProductShowcase = () => {
 
   const handleSelectSize = (size) => {
     setSelectedSize(size);
-  }
+  };
 
-  
+  const handleSelectColor = (color) => {
+    setSelectedColor(color);
+  };
+
   return (
     <section className="flex-center mt-4 w-full">
       <div className="flex flex-col gap-5 sm:flex-row">
@@ -59,27 +63,51 @@ const ProductShowcase = () => {
             <div className="my-6">
               <p>Select Colors</p>
               <div className="product-selector mt-4 flex gap-2">
-                <button className="color-option h-10 w-10 rounded-full border border-black/60 bg-amber-500 active:border-2 active:border-black"></button>
-                <button className="color-option h-10 w-10 rounded-full border border-black/60 bg-green-800 active:border-2 active:border-black"></button>
-                <button className="color-option h-10 w-10 rounded-full border border-black/60 bg-blue-900 active:border-2 active:border-black"></button>
+                <button
+                  onClick={() => handleSelectColor("amber")}
+                  className="color-option flex h-10 w-10 items-center justify-center rounded-full bg-amber-500 hover:bg-amber-500/60"
+                >
+                  {selectedColor === "amber" && (
+                    <BiCheck size={20} fill="white" />
+                  )}
+                </button>
+                <button
+                  onClick={() => handleSelectColor("green")}
+                  className="color-option flex h-10 w-10 items-center justify-center rounded-full bg-green-800 hover:bg-green-800/60"
+                >
+                  {selectedColor === "green" && (
+                    <BiCheck size={20} fill="white" />
+                  )}
+                </button>
+                <button
+                  onClick={() => handleSelectColor("blue")}
+                  className="color-option flex h-10 w-10 items-center justify-center rounded-full bg-blue-900 hover:bg-blue-900/60"
+                >
+                  {selectedColor === "blue" && (
+                    <BiCheck size={20} fill="white" />
+                  )}
+                </button>
               </div>
             </div>
             <hr className="border-black/20" />
             <div className="my-6">
               <p>Choose Size</p>
               <div className="product-selector mt-4 flex gap-2">
-                <button onClick={() => handleSelectSize("Small")}
-                  className={`transition-all ease-in-out duration-300 font-primary color-option rounded-full bg-[#F0F0F0] px-8 py-3 ${selectedSize === "Small" ? "bg-black text-white": "bg-[#F0F0F0]"}`}
+                <button
+                  onClick={() => handleSelectSize("Small")}
+                  className={`font-primary color-option rounded-full bg-[#F0F0F0] px-8 py-3 transition-all duration-300 ease-in-out ${selectedSize === "Small" ? "bg-black text-white" : "bg-[#F0F0F0]"}`}
                 >
                   Small
                 </button>
-                <button onClick={() => handleSelectSize("Medium")}
-                  className={`transition-all ease-in-out duration-300 font-primary color-option rounded-full bg-[#F0F0F0] px-8 py-3 ${selectedSize === "Medium" ? "bg-black text-white": "bg-[#F0F0F0]"}`}
+                <button
+                  onClick={() => handleSelectSize("Medium")}
+                  className={`font-primary color-option rounded-full bg-[#F0F0F0] px-8 py-3 transition-all duration-300 ease-in-out ${selectedSize === "Medium" ? "bg-black text-white" : "bg-[#F0F0F0]"}`}
                 >
                   Medium
                 </button>
-                <button onClick={() => handleSelectSize("Large")}
-                  className={`transition-all ease-in-out duration-300 font-primary color-option rounded-full  px-8 py-3 ${selectedSize === "Large" ? "bg-black text-white": "bg-[#F0F0F0]"}`}
+                <button
+                  onClick={() => handleSelectSize("Large")}
+                  className={`font-primary color-option rounded-full px-8 py-3 transition-all duration-300 ease-in-out ${selectedSize === "Large" ? "bg-black text-white" : "bg-[#F0F0F0]"}`}
                 >
                   Large
                 </button>
@@ -103,7 +131,7 @@ const ProductShowcase = () => {
                 <BiPlus />
               </button>
             </div>
-            <button className="grow font-primary add-to-cart qty-selector flex w-36 items-center justify-center rounded-full bg-black text-white">
+            <button className="font-primary add-to-cart qty-selector flex w-36 grow items-center justify-center rounded-full bg-black text-white">
               Add to cart
             </button>
           </div>
