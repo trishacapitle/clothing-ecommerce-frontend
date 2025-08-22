@@ -16,14 +16,20 @@ const ProductShowcase = () => {
 
   const { name, rating, image } = selectedProduct;
 
+   if (!selectedProduct) {
+     return (
+       <section className="flex-center mt-4 w-full">
+         <p className="text-black/60">Product not found.</p>
+       </section>
+     );
+   }
+
   const handleIncrease = () => {
-    const res = qty + 1;
-    setQty(res);
+    setQty((q)=>q+1);
   };
 
   const handleDecrease = () => {
-    const res = qty - 1;
-    setQty(res);
+    setQty((q)=>q-1);
   };
 
   const handleSelectSize = (size) => {
@@ -42,6 +48,7 @@ const ProductShowcase = () => {
             src={`/${image}`}
             alt={`${name} image`}
             className="w-2xl rounded-3xl"
+            loading="lazy"
           />
         </div>
         <div className="product-details flex flex-col gap-2 leading-tight">
