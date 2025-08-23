@@ -1,18 +1,12 @@
-import { useParams } from "react-router-dom";
 import { useState } from "react";
-import { BiPlus, BiMinus, BiCheck } from "react-icons/bi";
-import { data } from "../../../assets/data";
+import { BiCheck, BiMinus, BiPlus } from "react-icons/bi";
 import Pricetag from "../../../components/ui/Pricetag";
 import StarRatings from "../../../components/ui/StarRatings";
 
-const ProductShowcase = () => {
+const ProductShowcase = (selectedProduct) => {
   const [qty, setQty] = useState(0);
   const [selectedSize, setSelectedSize] = useState("");
   const [selectedColor, setSelectedColor] = useState("");
-
-  const { id } = useParams();
-  const { products } = data;
-  const selectedProduct = products.find((product) => product.id === Number(id));
 
   const { name, rating, image } = selectedProduct;
 
