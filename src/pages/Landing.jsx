@@ -1,9 +1,9 @@
-import Hero from "./components/Hero";
-import Brands from "./components/Brands";
-import Products from "./components/Products";
-import Categories from "./components/Categories";
-import Reviews from "./components/Reviews";
-import Footer from "./components/Footer";
+import Hero from "../features/home/sections/Hero";
+import Brands from "../features/home/sections/Brands";
+import Products from "../features/home/sections/Products";
+import Categories from "../features/home/sections/Categories";
+import Reviews from "../features/home/sections/Reviews";
+import Footer from "../components/Footer";
 
 const Landing = () => {
   return (
