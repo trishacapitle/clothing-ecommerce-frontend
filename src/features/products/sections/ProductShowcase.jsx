@@ -3,14 +3,14 @@ import { BiCheck, BiMinus, BiPlus } from "react-icons/bi";
 import Pricetag from "../../../components/ui/Pricetag";
 import StarRatings from "../../../components/ui/StarRatings";
 
-const ProductShowcase = (selectedProduct) => {
+const ProductShowcase = ({product}) => {
   const [qty, setQty] = useState(0);
   const [selectedSize, setSelectedSize] = useState("");
   const [selectedColor, setSelectedColor] = useState("");
 
-  const { name, rating, image } = selectedProduct;
+  const { name, rating, image } = product;
 
-   if (!selectedProduct) {
+   if (!product) {
      return (
        <section className="flex-center mt-4 w-full">
          <p className="text-black/60">Product not found.</p>
@@ -54,7 +54,7 @@ const ProductShowcase = (selectedProduct) => {
           ) : (
             <span className="font-primary text-black/60">No ratings yet</span>
           )}
-          <Pricetag product={selectedProduct} />
+          <Pricetag product={product} />
           <p className="text-black/60">
             This graphic t-shirt which is perfect for any occasion. Crafted from
             a soft and breathable fabric, it offers superior comfort and style.
