@@ -1,9 +1,22 @@
-import React from 'react'
+import ReviewCard from "../../../components/ui/ReviewCard";
 
-const ProductReviews = () => {
+const ProductReviews = ({ product }) => {
   return (
-    <div>ProductReviews</div>
-  )
-}
+    <div className="flex">
+      {product.review?.map((r) => (
+        <ReviewCard
+          key={r.id}
+          rating={{
+            stars: r.productRating,
+            name: r.customerName,
+            review: r.productReview,
+            date: r.reviewDate
+          }}
+        />
+      ))}
+    </div>
+  );
+};
 
-export default ProductReviews
+
+export default ProductReviews;
