@@ -10,7 +10,7 @@ const Product = () => {
   const { id } = useParams();
   const { products } = data;
   const selectedProduct = products.find((product) => product.id === Number(id));
-
+  
   return (
     <div className="m-auto flex w-full flex-col p-4 md:w-[90dvw] lg:w-[80dvw]">
       <Breadcrumb />
